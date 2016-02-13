@@ -16,6 +16,8 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var buttonParentView: UIView!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var spinnerView: UIActivityIndicatorView!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     //var initialFieldY: CGFloat!
     var initialButtonY: CGFloat!
@@ -41,6 +43,49 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func backDidTap(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    @IBAction func signInDidTap(sender: AnyObject) {
+        if self.emailField.text!.isEmpty || self.passwordField.text!.isEmpty {
+            let alertController = UIAlertController(title:"Email and password required",message: "Gotta fill out all the things, girl.",preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                // handle response here.
+            }
+            alertController.addAction(OKAction)
+            self.presentViewController(alertController, animated: true) {
+                // optional code for what happens after the alert controller has finished presenting
+            }
+        }
+        else {
+            self.spinnerView.hidden=false
+            delay(2) {
+                if self.emailField.text=="m" && self.passwordField.text=="p" {
+                    self.spinnerView.hidden=false
+                }
+                else {
+                    self.spinnerView.hidden=true
+                    let alertController = UIAlertController(title:"Invalid email or password",message: "You typed something wrong, bro.",preferredStyle: .Alert)
+                    let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                        // handle response here.
+                    }
+                    alertController.addAction(OKAction)
+                    self.presentViewController(alertController, animated: true) {
+                        // optional code for what happens after the alert controller has finished presenting
+                    }
+                    
+                }
+            }
+        }
+        
+        
+    }
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
     
     func keyboardWillShow(notification:NSNotification!){
