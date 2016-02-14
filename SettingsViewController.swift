@@ -28,6 +28,19 @@ class SettingsViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func singOutDidTap(sender: AnyObject) {
+        let alertController = UIAlertController(title:"Are you sure you want to sign out?", message: "", preferredStyle: .ActionSheet)
+        let OKAction = UIAlertAction(title: "Sign out", style: .Destructive) { (action) in
+            self.performSegueWithIdentifier("backToIntroSegue", sender: self)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) {(action) in
+        }
+        alertController.addAction(OKAction)
+        alertController.addAction(cancelAction)
+        self.presentViewController(alertController, animated: true) {
+            // optional code for what happens after the alert controller has finished presenting
+        }
+    }
     /*
     // MARK: - Navigation
 

@@ -60,7 +60,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         }
         else {
             self.spinnerView.hidden=false
-            delay(2) {
+            delay(1) {
                 if self.emailField.text=="m" && self.passwordField.text=="p" {
                     self.view.endEditing(true)
                     UIView.animateWithDuration(0.3) { () -> Void in
