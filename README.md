@@ -14,13 +14,11 @@ The following **required** functionality is complete:
 * [X] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
 * [X] User can page between the tutorial screens
 * [X] Display a scrollable view of images in the timeline
-* [X] User can tap on the conversations button to see the conversations screen (push).
-* [X]
-* [X]
-* [X]
-* [X]
-* [X]
-* [X]
+* [X] User can tap on the conversations button to see the conversations screen (push)
+* [X] User can tap on the profile image to see the settings view (bottom modal)
+* [X] User can dismiss the conversations screen
+* [X] User can dismiss the settings screen
+* [X] User can log out
 
 The following **optional** features are implemented:
 * [X] When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
