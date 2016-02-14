@@ -13,7 +13,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="PbO-GY-b8d">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="PbO-GY-b8d">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -133,6 +133,11 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <view contentMode="scaleToFill" id="ayB-dR-Pb7">
+                                                <rect key="frame" x="88" y="20" width="144" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.10980392156862745" green="0.67450980392156867" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="274-nh-3UE">
                                                 <rect key="frame" x="20" y="13" width="280" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -156,12 +161,14 @@
                     <connections>
                         <outlet property="backButton" destination="x5t-N1-WB1" id="pRV-dF-ZQy"/>
                         <outlet property="buttonParentView" destination="oxX-O6-qZL" id="mCz-uV-jJa"/>
+                        <outlet property="buttonSwatch" destination="ayB-dR-Pb7" id="hjl-qm-g0M"/>
                         <outlet property="emailField" destination="EwC-gP-d0Q" id="ZXG-bp-Wwz"/>
                         <outlet property="fieldParentView" destination="EPA-VD-TeK" id="Hq1-3T-9fE"/>
                         <outlet property="passwordField" destination="Cel-FQ-3bw" id="JGw-GC-w73"/>
                         <outlet property="signInButton" destination="274-nh-3UE" id="YeK-uc-cso"/>
                         <outlet property="signInScrollView" destination="ZhV-lr-tka" id="tDR-L4-O7R"/>
                         <outlet property="spinnerView" destination="97M-rG-hEb" id="e6w-3r-kRt"/>
+                        <segue destination="FNP-Dk-KNI" kind="push" identifier="loginSegue" id="mnK-Pr-4BC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8iv-Im-51W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -176,7 +183,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="63H-1z-rfm">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="63H-1z-rfm">
                                 <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -207,6 +214,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="i4S-fP-7Yr"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>

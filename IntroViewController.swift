@@ -35,7 +35,6 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
             tile.transform = CGAffineTransformRotate(tile.transform,
             CGFloat(Double(rotations[index]) * M_PI / 180))
         }
-        //print(tileArray(0).image!.size, ",", tileArray(0).frame.origin)
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,9 +54,6 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
             tile.center.y = convertValue(scrollOffset, r1Min: -80, r1Max: 568, r2Min: CGFloat(yInitials[index]), r2Max: CGFloat(yOffsets[index]))
             tile.center.x = convertValue(scrollOffset, r1Min: -80, r1Max: 568, r2Min: CGFloat(xInitials[index]), r2Max: CGFloat(xOffsets[index]))
         }
-//        tile1.center.y = convertValue(scrollOffset, r1Min: 0, r1Max: 568, r2Min: 490, r2Max: CGFloat(yOffsets[0]))
-//        tile1.frame.origin.x = convertValue(offset, r1Min: 0, r1Max: 46, r2Min: 0, r2Max: 1136)
-        // This method is called as the user scrolls
     }
 
     /*

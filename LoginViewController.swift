@@ -16,6 +16,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var buttonParentView: UIView!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var spinnerView: UIActivityIndicatorView!
+    @IBOutlet weak var buttonSwatch: UIView!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -26,6 +27,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         //initialFieldY=fieldParentView.frame.origin.y
+        buttonSwatch.alpha=0
         initialButtonY = buttonParentView.frame.origin.y
         spinnerView.hidden=true
         signInScrollView.contentSize=signInScrollView.frame.size
@@ -60,7 +62,14 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             self.spinnerView.hidden=false
             delay(2) {
                 if self.emailField.text=="m" && self.passwordField.text=="p" {
-                    self.spinnerView.hidden=false
+                    self.view.endEditing(true)
+                    UIView.animateWithDuration(0.3) { () -> Void in
+                        self.spinnerView.transform = CGAffineTransformMakeTranslation(-110,0)
+                        self.buttonSwatch.alpha = 1
+                    }
+                    self.delay(1.5){
+                        self.performSegueWithIdentifier("loginSegue",sender: self)
+                    }
                 }
                 else {
                     self.spinnerView.hidden=true
