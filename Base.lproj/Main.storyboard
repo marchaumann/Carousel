@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Ui-1J-ycm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3iN-J7-B8T">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -33,6 +33,10 @@
                                         <rect key="frame" x="200" y="828" width="76" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile4" id="yEu-x2-mcB">
+                                        <rect key="frame" x="46" y="906" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile5" id="nyN-AV-gda">
                                         <rect key="frame" x="123" y="907" width="76" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -48,10 +52,6 @@
                                             <segue destination="6Jn-Bz-YEp" kind="push" id="TbW-fE-XPm"/>
                                         </connections>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile4" id="yEu-x2-mcB">
-                                        <rect key="frame" x="46" y="906" width="76" height="76"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -63,6 +63,12 @@
                     <connections>
                         <outlet property="introBackground" destination="4ce-b2-lqs" id="BTN-K4-ITD"/>
                         <outlet property="introScrollView" destination="PbO-GY-b8d" id="I2K-cb-NBa"/>
+                        <outlet property="tile1" destination="hA5-oQ-aNE" id="gSC-xI-wwL"/>
+                        <outlet property="tile2" destination="150-CE-tXe" id="uNi-E1-4qP"/>
+                        <outlet property="tile3" destination="wJk-aJ-T3W" id="yF0-tU-6mC"/>
+                        <outlet property="tile4" destination="yEu-x2-mcB" id="6HW-Mb-cVl"/>
+                        <outlet property="tile5" destination="nyN-AV-gda" id="mxt-Is-N2G"/>
+                        <outlet property="tile6" destination="22q-pu-isb" id="azE-CF-jmD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
