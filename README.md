@@ -24,6 +24,10 @@ The following **optional** features are implemented:
 * [X] When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
 * [ ] On sign in form appear, scale the form up and fade it in.
 * [ ] Create a Dropbox flow
+ * [ ] Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up
+ * [ ] Tapping the Agree to Terms checkbox selects the checkbox
+ * [ ] Tapping on Terms shows a webview with the terms
+ * [ ] User is taken to the tutorial screens upon tapping the "Create a Dropbox" button
 * [X] Dots update on tutorial screen paging
 * [X] Upon reaching the 4th tutorial page, hide the dots and show the "Take Carousel for a Spin" button.
 * [ ]
