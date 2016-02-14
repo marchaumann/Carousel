@@ -30,11 +30,14 @@ The following **optional** features are implemented:
  * [ ] User is taken to the tutorial screens upon tapping the "Create a Dropbox" button
 * [X] Dots update on tutorial screen paging
 * [X] Upon reaching the 4th tutorial page, hide the dots and show the "Take Carousel for a Spin" button.
-* [ ]
-* [ ]
-* [ ]
-* [ ]
-* [ ]
+* [ ] Learn more about Carousel
+ * [ ] Show the "Learn more about Carousel" button in the photo timeline.
+ * [ ] Tap the X to dismiss the banner
+ * [ ] Track event 1: View a photo full screen
+ * [ ] Track event 2: Swipe left and right
+ * [ ] Track event 3: Share a photo
+ * [ ] Upon completion of the events, mark them green.
+ * [ ] When all events are completed, dismiss the banner.
 
 The following **additional** features are implemented:
 
