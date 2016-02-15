@@ -31,7 +31,7 @@ The following **optional** features are implemented:
  * [ ] User is taken to the tutorial screens upon tapping the "Create a Dropbox" button
 * [x] Dots update on tutorial screen paging
 * [x] Upon reaching the 4th tutorial page, hide the dots and show the "Take Carousel for a Spin" button.
-* [ ] Learn more about Carousel
+* [x] Learn more about Carousel
  * [x] Show the "Learn more about Carousel" button in the photo timeline.
  * [x] Tap the X to dismiss the banner
  * [x] Track event 1: View a photo full screen
@@ -46,7 +46,7 @@ The following **additional** features are implemented:
 - [x] scaling on the sign in form uses a spring animation
 - [x] On sign in success, the keyboard hides, the button text fades out and the spinner animates to the center of the screen
 - [x] on the walkthrough slides, the dots fade out, and the button fades in (both triggered by different events, one connected directly to scroll position and one triggered by the page #)
-- [x] views animate (image scales and scrollview fades) in and back out of the fullscreen slideshow view
+- [x] views animate (image scales and scrollview fades) in and back out of the fullscreen slideshow view (hacked approach, but it gets the feeling across :P)
 
 
 ## Video Walkthrough 
