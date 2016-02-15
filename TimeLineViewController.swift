@@ -10,6 +10,7 @@ import UIKit
 
 class TimeLineViewController: UIViewController {
 
+    @IBOutlet weak var bannerView: UIView!
     @IBOutlet weak var timeLineScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,17 @@ class TimeLineViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.bannerView.transform = CGAffineTransformMakeTranslation(0, 44)
+        }
+    }
 
+    @IBAction func closeDidTap(sender: AnyObject) {
+        UIView.animateWithDuration(0.3) { () -> Void in
+            self.bannerView.transform = CGAffineTransformMakeTranslation(0, -44)
+        }
+    }
     /*
     // MARK: - Navigation
 
