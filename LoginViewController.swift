@@ -38,6 +38,35 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        // Set initial transform values 20% of original size
+        let transform = CGAffineTransformMakeScale(0.2, 0.2)
+        // Apply the transform properties of the views
+        buttonParentView.transform = transform
+        fieldParentView.transform = transform
+        // Set the alpha properties of the views to transparent
+        buttonParentView.alpha = 0
+        fieldParentView.alpha = 0
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        //Animate the code within over 0.3 seconds...
+        UIView.animateWithDuration(0.6, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 4, options: [], animations: {
+            self.fieldParentView.transform = CGAffineTransformIdentity
+            self.buttonParentView.transform = CGAffineTransformIdentity
+            // Set the alpha properties of the views to fully opaque
+            self.fieldParentView.alpha = 1
+            self.buttonParentView.alpha = 1
+            }, completion: {(action) in})
+//        UIView.animateWithDuration(0.3) { () -> Void in
+//            // Return the views transform properties to their default states.
+//            self.fieldParentView.transform = CGAffineTransformIdentity
+//            self.buttonParentView.transform = CGAffineTransformIdentity
+//            // Set the alpha properties of the views to fully opaque
+//            self.fieldParentView.alpha = 1
+//            self.buttonParentView.alpha = 1
+//        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
