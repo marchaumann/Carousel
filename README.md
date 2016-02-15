@@ -21,6 +21,7 @@ The following **required** functionality is complete:
 * [X] User can log out
 
 The following **optional** features are implemented:
+* [X] Photo tiles move, scale, and rotate with scrolling
 * [X] When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
 * [ ] On sign in form appear, scale the form up and fade it in.
 * [ ] Create a Dropbox flow
@@ -40,8 +41,9 @@ The following **optional** features are implemented:
  * [ ] When all events are completed, dismiss the banner.
 
 The following **additional** features are implemented:
-
-- [X] On create account screen, the Create button becomes enabled only once the user has a long enough password
+- [X] the photo tile transitions are done in a for loop ("EnumerateSequence") so that code doesn't appear repeated 6 times
+- [X] On sign in success, the keyboard hides, the button text fades out and the spinner animates to the center of the screen
+- [X] on the walkthrough slides, the dots fade out, and the button fades in (both triggered by different events, one connected directly to scroll position and one triggered by the page #)
 
 ## Video Walkthrough 
 
