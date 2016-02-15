@@ -34,11 +34,11 @@ The following **optional** features are implemented:
 * [ ] Learn more about Carousel
  * [x] Show the "Learn more about Carousel" button in the photo timeline.
  * [x] Tap the X to dismiss the banner
- * [ ] Track event 1: View a photo full screen
- * [ ] Track event 2: Swipe left and right
- * [ ] Track event 3: Share a photo
- * [ ] Upon completion of the events, mark them green.
- * [ ] When all events are completed, dismiss the banner.
+ * [x] Track event 1: View a photo full screen
+ * [x] Track event 2: Swipe left and right
+ * [x] Track event 3: Share a photo
+ * [x] Upon completion of the events, mark them green.
+ * [x] When all events are completed, dismiss the banner.
 * [x] Present actionsheet on sign out with options to "sign out" or "cancel"
 
 The following **additional** features are implemented:
