@@ -18,6 +18,7 @@ class TimeLineViewController: UIViewController {
     @IBOutlet weak var bannerView: UIView!
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var timeLineScrollView: UIScrollView!
+    var defaults = NSUserDefaults.standardUserDefaults()
     override func viewDidLoad() {
         super.viewDidLoad()
         timeLineScrollView.contentSize = CGSize(width: 320, height: 1564+36+65)
@@ -38,7 +39,12 @@ class TimeLineViewController: UIViewController {
             self.image2.alpha=1
             self.image3.alpha=1
             self.imageButton.transform = CGAffineTransformIdentity
-            self.bannerView.transform = CGAffineTransformMakeTranslation(0, 44)
+            if self.defaults.integerForKey("photoDidTap") == 1 && self.defaults.integerForKey("photoDidScroll") == 1 && self.defaults.integerForKey("shareDidTap") == 1 {
+               self.bannerView.transform = CGAffineTransformIdentity
+            }
+            else {
+               self.bannerView.transform = CGAffineTransformMakeTranslation(0, 44)
+            }
         }
     }
 
@@ -49,6 +55,8 @@ class TimeLineViewController: UIViewController {
     }
     
     @IBAction func imageDidTap(sender: AnyObject) {
+        defaults.setInteger(1, forKey: "photoTap")
+        defaults.synchronize()
         UIView.animateWithDuration(0.4) { () -> Void in
             self.bannerView.alpha=0
             self.scrubber.alpha=0

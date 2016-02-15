@@ -380,6 +380,20 @@
                                     <action selector="closeDidTap:" destination="MbW-58-4sX" eventType="touchUpInside" id="1gK-TF-arq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viewed a photo fullscreen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c8o-p5-FIP">
+                                <rect key="frame" x="36" y="491" width="249" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.74161073825503354" blue="0.22147651006711411" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swiped through photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fbx-WM-koI">
+                                <rect key="frame" x="36" y="491" width="249" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.74161073830000002" blue="0.2214765101" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -387,6 +401,8 @@
                     <size key="freeformSize" width="960" height="568"/>
                     <connections>
                         <outlet property="slidshowScrollView" destination="U7B-cS-GPw" id="uzQ-Dh-KcI"/>
+                        <outlet property="step1Text" destination="c8o-p5-FIP" id="Pje-3I-KQG"/>
+                        <outlet property="step2Text" destination="Fbx-WM-koI" id="xtn-oM-3dg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dA4-NP-iGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
