@@ -78,7 +78,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func signInDidTap(sender: AnyObject) {
         if self.emailField.text!.isEmpty || self.passwordField.text!.isEmpty {
-            let alertController = UIAlertController(title:"Email and password required",message: "Gotta fill out all the things, girl.",preferredStyle: .Alert)
+            let alertController = UIAlertController(title:"Email and password required",message: "Gotta fill out all the things, girl",preferredStyle: .Alert)
             let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
                 // handle response here.
             }
@@ -90,7 +90,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         else {
             self.spinnerView.hidden=false
             delay(1) {
-                if self.emailField.text=="m" && self.passwordField.text=="p" {
+                if self.emailField.text=="March" && self.passwordField.text=="pass" {
                     self.view.endEditing(true)
                     UIView.animateWithDuration(0.3) { () -> Void in
                         self.spinnerView.transform = CGAffineTransformMakeTranslation(-110,0)
@@ -102,7 +102,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
                 }
                 else {
                     self.spinnerView.hidden=true
-                    let alertController = UIAlertController(title:"Invalid email or password",message: "You typed something wrong, bro.",preferredStyle: .Alert)
+                    let alertController = UIAlertController(title:"Invalid email or password",message: "You typed something wrong, bro",preferredStyle: .Alert)
                     let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
                         // handle response here.
                     }
