@@ -23,7 +23,7 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 * [X] Photo tiles move, scale, and rotate with scrolling
 * [X] When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
-* [ ] On sign in form appear, scale the form up and fade it in.
+* [x] On sign in form appear, scale the form up and fade it in.
 * [ ] Create a Dropbox flow
  * [ ] Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up
  * [ ] Tapping the Agree to Terms checkbox selects the checkbox
