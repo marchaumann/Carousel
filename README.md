@@ -7,30 +7,30 @@ Time spent: X hours spent in total
 ## User Stories
 
 The following **required** functionality is complete:
-* [X] Static photo tiles on the initial screen
-* [X] Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
-* [X] If the username or password fields are empty, user sees an error alert.
-* [X] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
-* [X] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
-* [X] User can page between the tutorial screens
-* [X] Display a scrollable view of images in the timeline
-* [X] User can tap on the conversations button to see the conversations screen (push)
-* [X] User can tap on the profile image to see the settings view (bottom modal)
-* [X] User can dismiss the conversations screen
-* [X] User can dismiss the settings screen
-* [X] User can log out
+* [x] Static photo tiles on the initial screen
+* [x] Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
+* [x] If the username or password fields are empty, user sees an error alert.
+* [x] If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
+* [x] If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
+* [x] User can page between the tutorial screens
+* [x] Display a scrollable view of images in the timeline
+* [x] User can tap on the conversations button to see the conversations screen (push)
+* [x] User can tap on the profile image to see the settings view (bottom modal)
+* [x] User can dismiss the conversations screen
+* [x] User can dismiss the settings screen
+* [x] User can log out
 
 The following **optional** features are implemented:
-* [X] Photo tiles move, scale, and rotate with scrolling
-* [X] When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
+* [x] Photo tiles move, scale, and rotate with scrolling
+* [x] Pulling down on the scrollview dismisses the keyboard.
 * [x] On sign in form appear, scale the form up and fade it in.
 * [ ] Create a Dropbox flow
  * [ ] Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up
  * [ ] Tapping the Agree to Terms checkbox selects the checkbox
  * [ ] Tapping on Terms shows a webview with the terms
  * [ ] User is taken to the tutorial screens upon tapping the "Create a Dropbox" button
-* [X] Dots update on tutorial screen paging
-* [X] Upon reaching the 4th tutorial page, hide the dots and show the "Take Carousel for a Spin" button.
+* [x] Dots update on tutorial screen paging
+* [x] Upon reaching the 4th tutorial page, hide the dots and show the "Take Carousel for a Spin" button.
 * [ ] Learn more about Carousel
  * [ ] Show the "Learn more about Carousel" button in the photo timeline.
  * [ ] Tap the X to dismiss the banner
@@ -39,11 +39,14 @@ The following **optional** features are implemented:
  * [ ] Track event 3: Share a photo
  * [ ] Upon completion of the events, mark them green.
  * [ ] When all events are completed, dismiss the banner.
+* [x] Present actionsheet on sign out with options to "sign out" or "cancel"
 
 The following **additional** features are implemented:
-- [X] the photo tile transitions are done in a for loop ("EnumerateSequence") so that code doesn't appear repeated 6 times
-- [X] On sign in success, the keyboard hides, the button text fades out and the spinner animates to the center of the screen
-- [X] on the walkthrough slides, the dots fade out, and the button fades in (both triggered by different events, one connected directly to scroll position and one triggered by the page #)
+- [x] the photo tile transitions are done in a for loop ("EnumerateSequence") so that code doesn't appear repeated 6 times
+- [x] scaling on the sign in form uses a spring animation
+- [x] On sign in success, the keyboard hides, the button text fades out and the spinner animates to the center of the screen
+- [x] on the walkthrough slides, the dots fade out, and the button fades in (both triggered by different events, one connected directly to scroll position and one triggered by the page #)
+
 
 ## Video Walkthrough 
 
